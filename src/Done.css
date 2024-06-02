@@ -1,0 +1,36 @@
+/* Style for the todo items */
+.todo {
+  display: flex; /* Align items in a row */
+  justify-content: space-between; /* Space between the todo text and buttons */
+  background: #f4f4f4; /* Light grey background color */
+  padding: 10px; /* Padding around the todo item */
+  border: 1px solid #ddd; /* Light grey border */
+  margin-top: 10px; /* Space between todo items */
+}
+
+/* Style for completed todo items */
+.todo.completed {
+  background-color: lightgreen; /* Light green background color for completed items */
+  text-decoration: line-through; /* Strikethrough text decoration */
+}
+
+/* General button styling */
+button {
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 5px 10px; /* Padding inside the button */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-left: 5px; /* Space between buttons */
+}
+
+/* Style for the remove button */
+.remove-button {
+  background-color: red; /* Red background color */
+  color: white; /* White text color */
+}
+
+/* Style for the go-back button */
+.go-back-button {
+  background-color: rgb(30, 12, 187); /* Blue background color */
+  color: white; /* White text color */
+}

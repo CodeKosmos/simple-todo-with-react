@@ -1,0 +1,59 @@
+body {
+  background-image: url('hintergruend.png');
+  background-size: cover; /* Ensures the background image covers the entire screen */
+  background-position: center; /* Centers the background image on the page */
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content vertically within the .app container */
+}
+
+.header {
+  text-align: center; /* Centers text within the header */
+  padding: 0px; /* Removes any padding */
+}
+
+.content {
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  width: 100%; /* Takes up the full width of the parent element */
+}
+
+.left-panel,
+.right-panel {
+  flex: 1; /* Allows both panels to take up equal space */
+  padding: 20px; /* Adds 20px of padding inside the panels */
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between; /* Distributes items with space between them */
+  background: #f4f4f4; /* Light gray background color */
+  padding: 10px; /* Adds 10px of padding inside the todo item */
+  border: 1px solid #ddd; /* Thin gray border */
+  margin-top: 10px; /* Adds 10px of margin at the top */
+}
+
+.todo.not-completed {
+  background-color: lightblue; /* Light blue background for incomplete todos */
+}
+
+.todo.completed {
+  background-color: lightgreen; /* Light green background for completed todos */
+}
+
+input {
+  padding: 10px; /* Adds 10px of padding inside the input */
+  border: 1px solid #eb1111; /* Red border */
+  width: 60%; /* Takes up 60% of the parent element's width */
+  margin-right: 10px; /* Adds 10px of margin to the right */
+}
+
+.work-image {
+  width: 200px; /* Sets the width to 200px */
+  height: auto; /* Keeps the automatic height based on the width */
+  display: block; /* Displays the image as a block element */
+  margin: 20px auto 0; /* Adds 20px of margin at the top and centers the image horizontally */
+}

@@ -1,0 +1,13 @@
+body {
+  margin: 0; /* Remove default margin */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; /* Set the default font family */
+  -webkit-font-smoothing: antialiased; /* Smooth fonts for WebKit browsers */
+  -moz-osx-font-smoothing: grayscale; /* Smooth fonts for macOS */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace; /* Set the default font family for code elements */
+}

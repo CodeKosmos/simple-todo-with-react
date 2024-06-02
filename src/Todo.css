@@ -1,0 +1,33 @@
+button {
+  border: none; /* Remove the default border */
+  border-radius: 5px; /* Round the corners of the button */
+  padding: 5px 10px; /* Add padding to the button */
+  cursor: pointer; /* Change the cursor to pointer on hover */
+  margin-left: 5px; /* Add a left margin to the button */
+}
+
+.complete-button {
+  background-color: green; /* Set the background color to green for complete buttons */
+  color: white; /* Set the text color to white for better contrast */
+}
+
+.remove-button {
+  background-color: red; /* Set the background color to red for remove buttons */
+  color: white; /* Set the text color to white for better contrast */
+}
+
+.edit-button {
+  background-color: yellow; /* Set the background color to yellow for edit buttons */
+  color: black; /* Set the text color to black for better readability */
+}
+
+.save-button {
+  background-color: green; /* Set the background color to green for save buttons */
+  color: white; /* Set the text color to white for better contrast */
+  margin-right: 5px; /* Add a right margin to the save button */
+}
+
+.cancel-button {
+  background-color: red; /* Set the background color to red for cancel buttons */
+  color: white; /* Set the text color to white for better contrast */
+}

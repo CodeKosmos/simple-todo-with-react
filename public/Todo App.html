@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/a1.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <title>Todo App</title>
+  <script defer="" src="./Todo App_files/bundle.js.Download"></script><style>body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9pbmRleC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxTQUFTO0VBQ1Q7O2NBRVk7RUFDWixtQ0FBbUM7RUFDbkMsa0NBQWtDO0FBQ3BDOztBQUVBO0VBQ0U7YUFDVztBQUNiIiwic291cmNlc0NvbnRlbnQiOlsiYm9keSB7XG4gIG1hcmdpbjogMDtcbiAgZm9udC1mYW1pbHk6IC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgJ1NlZ29lIFVJJywgJ1JvYm90bycsICdPeHlnZW4nLFxuICAgICdVYnVudHUnLCAnQ2FudGFyZWxsJywgJ0ZpcmEgU2FucycsICdEcm9pZCBTYW5zJywgJ0hlbHZldGljYSBOZXVlJyxcbiAgICBzYW5zLXNlcmlmO1xuICAtd2Via2l0LWZvbnQtc21vb3RoaW5nOiBhbnRpYWxpYXNlZDtcbiAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTtcbn1cblxuY29kZSB7XG4gIGZvbnQtZmFtaWx5OiBzb3VyY2UtY29kZS1wcm8sIE1lbmxvLCBNb25hY28sIENvbnNvbGFzLCAnQ291cmllciBOZXcnLFxuICAgIG1vbm9zcGFjZTtcbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.left-panel,
+.right-panel {
+  flex: 1 1;
+  padding: 20px;
+}
+
+.left-panel {
+  margin-right: 10px;
+}
+
+.right-panel {
+  margin-left: 10px;
+}
+
+.todo-list {
+  margin-bottom: 20px;
+}
+
+.completed-todos-list {
+  margin-bottom: 20px;
+}
+
+
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  background: #f4f4f4;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+}
+.work-image {
+  width: 200px; /* Ändern Sie die Breite nach Ihren Wünschen */
+  height: auto; /* Autohöhe beibehalten */
+  display: block; /* Element als Blockelement anzeigen */
+  margin: 20px auto 0; /* Abstand oben 20px, zentriert */
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  width: 70%;
+  margin-right: 10px;
+}
+
+button {
+  background: #61dafb;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9BcHAuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsYUFBYTtFQUNiLHNCQUFzQjtFQUN0QixtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsYUFBYTtBQUNmOztBQUVBO0VBQ0UsYUFBYTtFQUNiLHVCQUF1QjtFQUN2QixXQUFXO0FBQ2I7O0FBRUE7O0VBRUUsU0FBTztFQUNQLGFBQWE7QUFDZjs7QUFFQTtFQUNFLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLGlCQUFpQjtBQUNuQjs7QUFFQTtFQUNFLG1CQUFtQjtBQUNyQjs7QUFFQTtFQUNFLG1CQUFtQjtBQUNyQjs7OztBQUlBO0VBQ0UsYUFBYTtFQUNiLDhCQUE4QjtFQUM5QixtQkFBbUI7RUFDbkIsYUFBYTtFQUNiLHNCQUFzQjtFQUN0QixnQkFBZ0I7QUFDbEI7QUFDQTtFQUNFLFlBQVksRUFBRSw4Q0FBOEM7RUFDNUQsWUFBWSxFQUFFLHlCQUF5QjtFQUN2QyxjQUFjLEVBQUUsc0NBQXNDO0VBQ3RELG1CQUFtQixFQUFFLGlDQUFpQztBQUN4RDs7QUFFQTtFQUNFLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsVUFBVTtFQUNWLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLG1CQUFtQjtFQUNuQixZQUFZO0VBQ1osaUJBQWlCO0VBQ2pCLGVBQWU7QUFDakIiLCJzb3VyY2VzQ29udGVudCI6WyIuYXBwIHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cblxuLmhlYWRlciB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgcGFkZGluZzogMjBweDtcbn1cblxuLmNvbnRlbnQge1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgd2lkdGg6IDEwMCU7XG59XG5cbi5sZWZ0LXBhbmVsLFxuLnJpZ2h0LXBhbmVsIHtcbiAgZmxleDogMTtcbiAgcGFkZGluZzogMjBweDtcbn1cblxuLmxlZnQtcGFuZWwge1xuICBtYXJnaW4tcmlnaHQ6IDEwcHg7XG59XG5cbi5yaWdodC1wYW5lbCB7XG4gIG1hcmdpbi1sZWZ0OiAxMHB4O1xufVxuXG4udG9kby1saXN0IHtcbiAgbWFyZ2luLWJvdHRvbTogMjBweDtcbn1cblxuLmNvbXBsZXRlZC10b2Rvcy1saXN0IHtcbiAgbWFyZ2luLWJvdHRvbTogMjBweDtcbn1cblxuXG5cbi50b2RvIHtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICBiYWNrZ3JvdW5kOiAjZjRmNGY0O1xuICBwYWRkaW5nOiAxMHB4O1xuICBib3JkZXI6IDFweCBzb2xpZCAjZGRkO1xuICBtYXJnaW4tdG9wOiAxMHB4O1xufVxuLndvcmstaW1hZ2Uge1xuICB3aWR0aDogMjAwcHg7IC8qIMOEbmRlcm4gU2llIGRpZSBCcmVpdGUgbmFjaCBJaHJlbiBXw7xuc2NoZW4gKi9cbiAgaGVpZ2h0OiBhdXRvOyAvKiBBdXRvaMO2aGUgYmVpYmVoYWx0ZW4gKi9cbiAgZGlzcGxheTogYmxvY2s7IC8qIEVsZW1lbnQgYWxzIEJsb2NrZWxlbWVudCBhbnplaWdlbiAqL1xuICBtYXJnaW46IDIwcHggYXV0byAwOyAvKiBBYnN0YW5kIG9iZW4gMjBweCwgemVudHJpZXJ0ICovXG59XG5cbmlucHV0IHtcbiAgcGFkZGluZzogMTBweDtcbiAgYm9yZGVyOiAxcHggc29saWQgI2RkZDtcbiAgd2lkdGg6IDcwJTtcbiAgbWFyZ2luLXJpZ2h0OiAxMHB4O1xufVxuXG5idXR0b24ge1xuICBiYWNrZ3JvdW5kOiAjNjFkYWZiO1xuICBib3JkZXI6IG5vbmU7XG4gIHBhZGRpbmc6IDVweCAxMHB4O1xuICBjdXJzb3I6IHBvaW50ZXI7XG59XG4iXSwic291cmNlUm9vdCI6IiJ9 */</style></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class="app"><div class="header"><h1>Welcome to Todo Firas APP</h1><img src="./Todo App_files/work.988154dfe4d04601a085.png" alt="Work" class="work-image"></div><div class="content"><div class="left-panel"><form><input type="text" class="input" placeholder="Write here ..." value=""><button type="submit" style="background-color: blue; color: white; border: none; border-radius: 10px; padding: 10px 40px; cursor: pointer; font-size: 16px;">Add</button> </form><div class="todo-list"><div class="todo" style="text-decoration: none; background-color: inherit;">d<div><button style="background-color: green; color: white; border: none; border-radius: 5px; padding: 5px 10px; cursor: pointer; margin-right: 5px;">Complete</button><button style="background-color: red; color: white; border: none; border-radius: 5px; padding: 5px 10px; cursor: pointer; margin-left: 5px;">Edit</button><button style="background-color: red; color: white; border: none; border-radius: 5px; padding: 5px 10px; cursor: pointer; margin-left: 5px;">Remove</button></div></div><div class="todo" style="text-decoration: none; background-color: inherit;">r<div><button style="background-color: green; color: white; border: none; border-radius: 5px; padding: 5px 10px; cursor: pointer; margin-right: 5px;">Complete</button><button style="background-color: red; color: white; border: none; border-radius: 5px; padding: 5px 10px; cursor: pointer; margin-left: 5px;">Edit</button><button style="background-color: red; color: white; border: none; border-radius: 5px; padding: 5px 10px; cursor: pointer; margin-left: 5px;">Remove</button></div></div><div class="todo" style="text-decoration: none; background-color: inherit;">a<div><button style="background-color: green; color: white; border: none; border-radius: 5px; padding: 5px 10px; cursor: pointer; margin-right: 5px;">Complete</button><button style="background-color: red; color: white; border: none; border-radius: 5px; padding: 5px 10px; cursor: pointer; margin-left: 5px;">Edit</button><button style="background-color: red; color: white; border: none; border-radius: 5px; padding: 5px 10px; cursor: pointer; margin-left: 5px;">Remove</button></div></div><div class="todo" style="text-decoration: none; background-color: inherit;">s<div><button style="background-color: green; color: white; border: none; border-radius: 5px; padding: 5px 10px; cursor: pointer; margin-right: 5px;">Complete</button><button style="background-color: red; color: white; border: none; border-radius: 5px; padding: 5px 10px; cursor: pointer; margin-left: 5px;">Edit</button><button style="background-color: red; color: white; border: none; border-radius: 5px; padding: 5px 10px; cursor: pointer; margin-left: 5px;">Remove</button></div></div><div class="todo" style="text-decoration: none; background-color: inherit;">d<div><button style="background-color: green; color: white; border: none; border-radius: 5px; padding: 5px 10px; cursor: pointer; margin-right: 5px;">Complete</button><button style="background-color: red; color: white; border: none; border-radius: 5px; padding: 5px 10px; cursor: pointer; margin-left: 5px;">Edit</button><button style="background-color: red; color: white; border: none; border-radius: 5px; padding: 5px 10px; cursor: pointer; margin-left: 5px;">Remove</button></div></div><div class="todo" style="text-decoration: none; background-color: inherit;">f<div><button style="background-color: green; color: white; border: none; border-radius: 5px; padding: 5px 10px; cursor: pointer; margin-right: 5px;">Complete</button><button style="background-color: red; color: white; border: none; border-radius: 5px; padding: 5px 10px; cursor: pointer; margin-left: 5px;">Edit</button><button style="background-color: red; color: white; border: none; border-radius: 5px; padding: 5px 10px; cursor: pointer; margin-left: 5px;">Remove</button></div></div></div></div><div class="right-panel"><h2>Completed Todos</h2><div class="completed-todos-list"><div class="todo" style="text-decoration: line-through; background-color: lightgreen;">w<div><button style="background-color: red; color: white; border: none; border-radius: 5px; padding: 5px 10px; cursor: pointer; margin-left: 5px;">Remove</button><button style="background-color: red; color: white; border: none; border-radius: 5px; padding: 5px 10px; cursor: pointer; margin-left: 5px;">Go Back</button></div></div><div class="todo" style="text-decoration: line-through; background-color: lightgreen;">a<div><button style="background-color: red; color: white; border: none; border-radius: 5px; padding: 5px 10px; cursor: pointer; margin-left: 5px;">Remove</button><button style="background-color: red; color: white; border: none; border-radius: 5px; padding: 5px 10px; cursor: pointer; margin-left: 5px;">Go Back</button></div></div><div class="todo" style="text-decoration: line-through; background-color: lightgreen;">csdcsdc<div><button style="background-color: red; color: white; border: none; border-radius: 5px; padding: 5px 10px; cursor: pointer; margin-left: 5px;">Remove</button><button style="background-color: red; color: white; border: none; border-radius: 5px; padding: 5px 10px; cursor: pointer; margin-left: 5px;">Go Back</button></div></div><div class="todo" style="text-decoration: line-through; background-color: lightgreen;">vb<div><button style="background-color: red; color: white; border: none; border-radius: 5px; padding: 5px 10px; cursor: pointer; margin-left: 5px;">Remove</button><button style="background-color: red; color: white; border: none; border-radius: 5px; padding: 5px 10px; cursor: pointer; margin-left: 5px;">Go Back</button></div></div></div></div></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  
+
+</body></html>
